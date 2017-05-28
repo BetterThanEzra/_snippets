@@ -25,20 +25,8 @@ writeLines(c(
         fileConn)
 
 
-dir.create("test_1")
-dir.create("test_2")
-dir.create("test_3")
-
-file.copy("launch.Rexec", "test_1")
-file.copy("launch.Rexec", "test_2")
-file.copy("launch.Rexec", "test_3")
-
-file.copy("info.txt", "test_1")
-file.copy("info.txt", "test_2")
-file.copy("info.txt", "test_3")
-
 #Launch multiple instances via windows command line
-system("cmd /c start test_1/launch.Rexec")
-system("cmd /c start test_2/launch.Rexec")
-system("cmd /c start test_3/launch.Rexec")
+system("cmd /c start launch.Rexec")
+system("cmd /c start launch.Rexec")
+system("cmd /c start launch.Rexec")
 
